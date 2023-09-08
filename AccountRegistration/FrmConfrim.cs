@@ -14,6 +14,13 @@ namespace AccountRegistration
     {
         
         private event DelegateText DelProgram, DelLastName, DelFirstName, DelMiddleName, DelAddress ;
+
+        private void btnConfirm_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.OK;
+            this.Close();
+        }
+
         private event DelegateNumber DelNumAge, DelNumContactNo, DelStudNo;
 
         public FrmConfrim()
@@ -29,10 +36,7 @@ namespace AccountRegistration
             DelNumContactNo = new DelegateNumber(StudentInfoClass.GetContactNo);
             DelStudNo = new DelegateNumber(StudentInfoClass.GetStudentNo);
 
-
-
         }
-        
 
     }
 }

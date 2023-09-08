@@ -27,6 +27,8 @@ namespace AccountRegistration
             StudentInfoClass.Age = Convert.ToInt64(txtAge.Text.ToString());
             StudentInfoClass.ContactNo = Convert.ToInt64(txtContactNo.Text.ToString());
             StudentInfoClass.StudentNo = Convert.ToInt64(txtStudentNo.Text.ToString());
+
+           
         }
     }
 }
