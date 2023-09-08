@@ -8,7 +8,7 @@ namespace AccountRegistration
 {
 
     public delegate long DelegateNumber(long number);
-    public delegate string DelegateName(string txt);
+    public delegate string DelegateText(string txt);
 
     public class StudentInfoClass
     {
@@ -33,6 +33,11 @@ namespace AccountRegistration
         public static string GetMiddleName(string MiddleName)
         {
             return MiddleName;
+        }
+        public static string GetAddress(string Address)
+        {
+            return Address;
+
         }
         public static string GetProgram(string Program)
         {
