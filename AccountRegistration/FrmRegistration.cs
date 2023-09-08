@@ -17,10 +17,16 @@ namespace AccountRegistration
             InitializeComponent();
         }
 
-
         private void btnNext_Click(object sender, EventArgs e)
         {
-
+            StudentInfoClass.FirstName = txtFirstName.Text.ToString();
+            StudentInfoClass.LastName = txtLastName.Text.ToString();
+            StudentInfoClass.MiddleName = txtMiddleName.Text.ToString();
+            StudentInfoClass.Address = txtAddress.Text.ToString();
+            StudentInfoClass.Program = cbProgram.Text.ToString();
+            StudentInfoClass.Age = Convert.ToInt64(txtAge.Text.ToString());
+            StudentInfoClass.ContactNo = Convert.ToInt64(txtContactNo.Text.ToString());
+            StudentInfoClass.StudentNo = Convert.ToInt64(txtStudentNo.Text.ToString());
         }
     }
 }

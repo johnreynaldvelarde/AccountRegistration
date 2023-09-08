@@ -32,7 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtLastName = new System.Windows.Forms.TextBox();
-            this.cmdProgram = new System.Windows.Forms.ComboBox();
+            this.cbProgram = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txtFirstName = new System.Windows.Forms.TextBox();
@@ -85,14 +85,14 @@
             this.txtLastName.Size = new System.Drawing.Size(183, 26);
             this.txtLastName.TabIndex = 2;
             // 
-            // cmdProgram
+            // cbProgram
             // 
-            this.cmdProgram.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdProgram.FormattingEnabled = true;
-            this.cmdProgram.Location = new System.Drawing.Point(333, 68);
-            this.cmdProgram.Name = "cmdProgram";
-            this.cmdProgram.Size = new System.Drawing.Size(291, 26);
-            this.cmdProgram.TabIndex = 5;
+            this.cbProgram.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbProgram.FormattingEnabled = true;
+            this.cbProgram.Location = new System.Drawing.Point(333, 68);
+            this.cbProgram.Name = "cbProgram";
+            this.cbProgram.Size = new System.Drawing.Size(291, 26);
+            this.cbProgram.TabIndex = 5;
             // 
             // label3
             // 
@@ -228,7 +228,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtFirstName);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.cmdProgram);
+            this.Controls.Add(this.cbProgram);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtLastName);
             this.Controls.Add(this.label1);
@@ -246,7 +246,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtLastName;
-        private System.Windows.Forms.ComboBox cmdProgram;
+        private System.Windows.Forms.ComboBox cbProgram;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtFirstName;
