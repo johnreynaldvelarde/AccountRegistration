@@ -28,6 +28,9 @@ namespace AccountRegistration
             StudentInfoClass.ContactNo = Convert.ToInt64(txtContactNo.Text.ToString());
             StudentInfoClass.StudentNo = Convert.ToInt64(txtStudentNo.Text.ToString());
 
+            FrmConfrim frm = new FrmConfrim();
+            frm.ShowDialog();
+           
            
         }
     }

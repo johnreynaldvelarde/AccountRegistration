@@ -17,6 +17,7 @@ namespace AccountRegistration
 
         private void btnConfirm_Click(object sender, EventArgs e)
         {
+          
             this.DialogResult = DialogResult.OK;
             this.Close();
         }
@@ -35,6 +36,25 @@ namespace AccountRegistration
             DelNumAge = new DelegateNumber(StudentInfoClass.GetAge);
             DelNumContactNo = new DelegateNumber(StudentInfoClass.GetContactNo);
             DelStudNo = new DelegateNumber(StudentInfoClass.GetStudentNo);
+
+        }
+
+        public void ShowOutput()
+        {
+            lblProgram.Text = DelProgram(StudentInfoClass.Program);
+            lblLastName.Text = DelLastName(StudentInfoClass.LastName);
+            lblFirstName.Text = DelFirstName(StudentInfoClass.FirstName);
+            lblMiddleName.Text = DelMiddleName(StudentInfoClass.MiddleName);
+            lblAddress.Text = DelAddress(StudentInfoClass.Address);
+
+            long Age = Convert.ToInt64(lblAge);
+            Age = DelNumAge(StudentInfoClass.Age);
+
+            long numcont = Convert.ToInt64(lblContact);
+            numcont = DelNumAge(StudentInfoClass.ContactNo);
+
+            long studno = Convert.ToInt64(lblAge);
+            studno = DelNumAge(StudentInfoClass.StudentNo);
 
         }
 
