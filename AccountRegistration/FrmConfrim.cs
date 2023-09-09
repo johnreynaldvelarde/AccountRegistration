@@ -13,16 +13,31 @@ namespace AccountRegistration
     public partial class FrmConfrim : Form
     {
         
-        private event DelegateText DelProgram, DelLastName, DelFirstName, DelMiddleName, DelAddress ;
+        private event DelegateText DelProgram, DelLastName, DelFirstName, DelMiddleName, DelAddress;
+        private event DelegateNumber DelNumAge, DelNumContactNo, DelStudNo;
+
+        private void FrmConfrim_Load(object sender, EventArgs e)
+        {
+            lblProgram.Text = DelProgram(StudentInfoClass.Program);
+            lblLastName.Text = DelLastName(StudentInfoClass.LastName);
+            lblFirstName.Text = DelFirstName(StudentInfoClass.FirstName);
+            lblMiddleName.Text = DelMiddleName(StudentInfoClass.MiddleName);
+            lblAddress.Text = DelAddress(StudentInfoClass.Address);
+        }
+
+        // 15. form closed event
+        private void FrmConfrim_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.DialogResult = DialogResult.OK;
+        }
+
+       
 
         private void btnConfirm_Click(object sender, EventArgs e)
         {
-          
             this.DialogResult = DialogResult.OK;
-            ///this.Close();
+            this.Close();
         }
-
-        private event DelegateNumber DelNumAge, DelNumContactNo, DelStudNo;
 
         public FrmConfrim()
         {
@@ -41,12 +56,9 @@ namespace AccountRegistration
 
         public void ShowOutput()
         {
-            lblProgram.Text = DelProgram(StudentInfoClass.Program);
-            lblLastName.Text = DelLastName(StudentInfoClass.LastName);
-            lblFirstName.Text = DelFirstName(StudentInfoClass.FirstName);
-            lblMiddleName.Text = DelMiddleName(StudentInfoClass.MiddleName);
-            lblAddress.Text = DelAddress(StudentInfoClass.Address);
+            
 
+            /*
             long Age = Convert.ToInt64(lblAge);
             Age = DelNumAge(StudentInfoClass.Age);
 
@@ -55,7 +67,7 @@ namespace AccountRegistration
 
             long studno = Convert.ToInt64(lblAge);
             studno = DelNumAge(StudentInfoClass.StudentNo);
-
+            */
         }
 
     }

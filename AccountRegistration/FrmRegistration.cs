@@ -30,8 +30,7 @@ namespace AccountRegistration
 
             FrmConfrim frm = new FrmConfrim();
             frm.ShowDialog();
-           
-           
         }
+        
     }
 }

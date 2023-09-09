@@ -222,6 +222,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(478, 669);
             this.Controls.Add(this.lblAddress);
             this.Controls.Add(this.lblContact);
@@ -242,6 +243,8 @@
             this.Controls.Add(this.btnConfirm);
             this.Name = "FrmConfrim";
             this.Text = "FrmConfrim";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmConfrim_FormClosing);
+            this.Load += new System.EventHandler(this.FrmConfrim_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
