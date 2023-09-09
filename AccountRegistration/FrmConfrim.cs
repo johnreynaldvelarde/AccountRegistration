@@ -28,7 +28,6 @@ namespace AccountRegistration
             lblStudentNo.Text = DelStudNo(StudentInfoClass.StudentNo).ToString();
         }
 
-        // 15. form closed event
         private void FrmConfrim_FormClosing(object sender, FormClosingEventArgs e)
         {
             this.DialogResult = DialogResult.OK;
@@ -48,7 +47,6 @@ namespace AccountRegistration
             DelFirstName = new DelegateText(StudentInfoClass.GetFirstName);
             DelMiddleName = new DelegateText(StudentInfoClass.GetMiddleName);
             DelAddress = new DelegateText(StudentInfoClass.GetAddress);
-
             DelNumAge = new DelegateNumber(StudentInfoClass.GetAge);
             DelNumContactNo = new DelegateNumber(StudentInfoClass.GetContactNo);
             DelStudNo = new DelegateNumber(StudentInfoClass.GetStudentNo);
