@@ -23,6 +23,9 @@ namespace AccountRegistration
             lblFirstName.Text = DelFirstName(StudentInfoClass.FirstName);
             lblMiddleName.Text = DelMiddleName(StudentInfoClass.MiddleName);
             lblAddress.Text = DelAddress(StudentInfoClass.Address);
+            lblAge.Text = DelNumAge(StudentInfoClass.Age).ToString();
+            lblContact.Text = DelNumContactNo(StudentInfoClass.ContactNo).ToString();
+            lblStudentNo.Text = DelStudNo(StudentInfoClass.StudentNo).ToString();
         }
 
         // 15. form closed event
@@ -30,8 +33,6 @@ namespace AccountRegistration
         {
             this.DialogResult = DialogResult.OK;
         }
-
-       
 
         private void btnConfirm_Click(object sender, EventArgs e)
         {
@@ -53,22 +54,5 @@ namespace AccountRegistration
             DelStudNo = new DelegateNumber(StudentInfoClass.GetStudentNo);
 
         }
-
-        public void ShowOutput()
-        {
-            
-
-            /*
-            long Age = Convert.ToInt64(lblAge);
-            Age = DelNumAge(StudentInfoClass.Age);
-
-            long numcont = Convert.ToInt64(lblContact);
-            numcont = DelNumAge(StudentInfoClass.ContactNo);
-
-            long studno = Convert.ToInt64(lblAge);
-            studno = DelNumAge(StudentInfoClass.StudentNo);
-            */
-        }
-
     }
 }
