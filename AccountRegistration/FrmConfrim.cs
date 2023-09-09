@@ -19,7 +19,7 @@ namespace AccountRegistration
         {
           
             this.DialogResult = DialogResult.OK;
-            this.Close();
+            ///this.Close();
         }
 
         private event DelegateNumber DelNumAge, DelNumContactNo, DelStudNo;
